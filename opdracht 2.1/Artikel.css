@@ -1,0 +1,168 @@
+* {
+    font-family: sans-serif;
+}
+
+
+body > header {
+    float: left;
+    width: 15em;
+    clear: left;
+}
+
+header:second-child {
+    width: 20em;
+    float: left;
+    clear: left;
+}
+
+
+main > article {
+    width: 18em;
+    float: left;
+}
+
+body>section:first-of-type {
+    width: 15em;
+    display: block;
+    float: left;
+}
+
+aside>section {
+    width: 15em;
+    display: block;
+    float: left;
+}
+
+
+
+body > section:first-of-type > article {
+    height: 15em;
+    overflow:scroll;
+
+}
+body > footer {
+    clear:left;
+}
+body > footer > section {
+    display:inline-block;
+    width: 15em;
+}
+
+body > footer > section:first-of-type > ul>li:nth-child(1n) {
+    display:inline-block;
+
+}
+body {
+    background-color: #FECD29;
+    }
+
+    header > img {
+        width: 5em;
+    }
+
+p+p {
+font-size: 1.1em;
+}
+
+a:nth-first-of-type(2n){
+font-family: cursive;
+
+}
+
+section>img {
+    width: 15em;
+    border-radius: 10px 10px 10px 10px;
+}
+
+body > article:nth-of-type(2n) {
+    transform: scale(22);
+
+}
+
+/*img:hover {
+    -webkit-transform: rotate(360deg) scale(2);
+    -moz-transform: rotate(360deg) scale(2);
+    -ms-transform: rotate(360deg) scale(2);
+    -o-transform: rotate(360deg) scale(2);
+    transform: rotate(360deg) scale(2);
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s;
+}*/
+
+body {
+    -webkit-animation-name: Rainbow; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: .1s; /* Chrome, Safari, Opera */
+   -webkit-animation-iteration-count: 100; /*Chrome, Safari, Opera*/
+    animation-name: Rainbow;
+    animation-duration: .1s;
+    animation-iteration-count: 100;
+}
+
+@-webkit-keyframes images {
+    0%   {-webkit-transform:rotate(360deg);}
+    25%  {-webkit-transform:rotate(720deg);}
+    50%  {-webkit-transform:rotate(1440deg);}
+    75% {-webkit-transform:rotate(2880deg);}
+    100% {-webkit-transform:rotate(5760deg);}
+}
+
+img:hover {
+    -webkit-animation-name: images;
+    -moz-animation-name: images;
+    -o-animation-name: images;
+    animation-name: images;
+    -webkit-animation-duration: 2s;
+    -moz-animation-duration: 2s;
+    -o-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-iteration-count: 10;
+    -moz-animation-iteration-count: 10;
+    -o-animation-iteration-count: 10;
+    animation-iteration-count: 10;
+}
+
+@-webkit-keyframes Rainbow {
+    0%   {background-color: red;}
+    25%  {background-color: yellow;}
+    50%  {background-color: blue;}
+    75% {background-color: orange;}
+    100% {background-color: red;}
+}
+
+h1,h2,h3,h4 {
+        color:transparent;
+        text-shadow: 0 0 .2em rgba(0,0,0,0.5);
+    }
+
+@-webkit-keyframes linkrainbows {
+from { -webkit-transform: rotate(4deg) scale(4) skew(2deg);}
+to { -webkit-transform: rotate(90deg) scale(0.524) skew(60deg);}
+}
+
+a {
+ -webkit-animation-name: dumb;
+    animation-name:dumb;
+    -webkit-animation-duration:2s;
+    animation-duration: 2s;
+    -webkit-animation-iteration-count:10;
+    animation-iteration-count:10;
+}
+
+
+article:hover {
+ -webkit-animation-name: dumb;
+    animation-name:dumb;
+    -webkit-animation-duration:2s;
+    animation-duration: 2s;
+    -webkit-animation-iteration-count:10;
+    animation-iteration-count:10;
+}
+
+@-webkit-keyframes dumb {
+from { -webkit-transform: rotate(4deg) scale(1) skew(1deg) translate(10px); }
+to { -webkit-transform: rotate(4deg) scale(0.524) skew(30deg) translate(11px); }
+}
+
